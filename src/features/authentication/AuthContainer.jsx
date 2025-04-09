@@ -7,7 +7,7 @@ import { getOtp } from "../../services/authService";
 import { useForm } from "react-hook-form";
 
 function AuthContainer() {
-  const [step, setStep] = useState(2);
+  const [step, setStep] = useState(1);
   const { register, handleSubmit, getValues } = useForm();
 
   const {
@@ -26,6 +26,7 @@ function AuthContainer() {
       toast.success(res.message);
     } catch (error) {
       toast.error(error?.response?.data?.message);
+      setStep(2);
     }
   };
 
@@ -53,7 +54,7 @@ function AuthContainer() {
     }
   };
   return (
-    <div className="container w-full bg-red-100 sm:max-w-sm">
+    <div className="container w-full sm:max-w-sm">
       {renderStep()}
     </div>
   );

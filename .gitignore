@@ -3,7 +3,5 @@ node_modules/
 .env.development
 .env.production
 .git
-public/*
-uploads/*
 data
 /data
