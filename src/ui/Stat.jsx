@@ -15,8 +15,10 @@ function Stat({ icon, color, title, value }) {
         {icon}
       </div>
       <div className="flex flex-col gap-y-2">
-        <p className="text-lg font-bold text-secondary-600">{title}</p>
-        <span className="text-lg font-bold text-secondary-700">
+        <p className="text-base font-bold text-secondary-600 md:text-lg">
+          {title}
+        </p>
+        <span className="text-base md:text-lg font-bold text-secondary-700">
           {toPersianNumbers(value)}
         </span>
       </div>

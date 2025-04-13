@@ -32,7 +32,7 @@
       --color-secondary-0: 255, 255, 255;
       --color-success: 0, 192, 115;
       --color-warning: 255, 153, 0;
-      --color-error: 255, 71, 87;
+      --color-error: 46, 204, 113;
       --color-red-500: 239, 68, 68;
       --color-red-300: 252, 165, 165;
     }
@@ -88,10 +88,10 @@
     @apply bg-secondary-200 text-secondary-600;
   }
   .badge--success {
-    @apply bg-green-500 px-4 text-white;
+    @apply bg-green-600 px-4 text-white;
   }
   .badge--danger {
-    @apply bg-red-500 text-white;
+    @apply bg-red-600 text-white;
   }
 }
 

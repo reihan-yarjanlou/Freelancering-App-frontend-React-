@@ -9,7 +9,7 @@ function InputField({
 }) {
   return (
     <div>
-      <label htmlFor={name} className="mb-2 block text-secondary-800">
+      <label htmlFor={name} className="mb-4 block text-secondary-800">
         {label} {required && <span className="text-error">*</span>}
       </label>
       <input

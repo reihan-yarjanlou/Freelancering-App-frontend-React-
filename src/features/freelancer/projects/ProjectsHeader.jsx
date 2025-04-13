@@ -16,9 +16,9 @@ const statusOptions = [
 function ProjectsHeader() {
   const { transformedCategories } = useCategories();
   return (
-    <div className="mb-10 flex items-center justify-between text-secondary-700">
+    <div className="mb-10 flex flex-col items-start gap-y-8 text-secondary-700 xl:flex-row xl:items-center xl:justify-between">
       <h1 className="text-xl font-bold">لیست پروژه ها</h1>
-      <div className="flex items-center gap-x-3">
+      <div className="hidden items-center gap-x-3 md:flex">
         <Filter filterField="status" label="وضعیت" options={statusOptions} />
         <FilterDropdown
           filterField="category"

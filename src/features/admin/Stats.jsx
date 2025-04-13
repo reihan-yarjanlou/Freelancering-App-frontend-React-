@@ -21,7 +21,7 @@ function Stats() {
   const numOfProposals = proposals.length;
 
   return (
-    <div className="grid grid-cols-3 gap-x-4">
+    <div className="grid gap-4 lg:grid-cols-3">
       <Stat
         icon={<HiUsers className="h-16 w-16" />}
         color="primary"

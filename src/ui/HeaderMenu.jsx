@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import DarkModeToggle from "./DarkModeToggle";
 import Logout from "../features/authentication/Logout";
 
-function HeaderMenu() {
+function HeaderMenu({ children }) {
   return (
     <ul className="flex items-center gap-x-4">
       <li className="flex">
@@ -17,6 +17,7 @@ function HeaderMenu() {
       <li className="flex">
         <Logout />
       </li>
+      <li className="flex">{children}</li>
     </ul>
   );
 }

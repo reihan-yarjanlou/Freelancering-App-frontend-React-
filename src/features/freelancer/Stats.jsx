@@ -18,7 +18,7 @@ function Stats() {
   const balance = acceptedProposals.reduce((acc, curr) => acc + curr.price, 0);
 
   return (
-    <div className="grid grid-cols-3 gap-x-4">
+    <div className="grid grid-cols-1 gap-4 lg:grid-cols-3">
       <Stat
         icon={<HiOutlineViewGrid className="h-16 w-16" />}
         color="primary"

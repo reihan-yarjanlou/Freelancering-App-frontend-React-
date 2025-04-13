@@ -26,7 +26,6 @@ function AuthContainer() {
       toast.success(res.message);
     } catch (error) {
       toast.error(error?.response?.data?.message);
-      setStep(2);
     }
   };
 
@@ -53,11 +52,7 @@ function AuthContainer() {
         return null;
     }
   };
-  return (
-    <div className="container w-full sm:max-w-sm">
-      {renderStep()}
-    </div>
-  );
+  return <div className="container w-full sm:max-w-sm">{renderStep()}</div>;
 }
 
 export default AuthContainer;

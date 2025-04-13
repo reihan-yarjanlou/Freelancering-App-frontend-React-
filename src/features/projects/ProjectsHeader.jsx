@@ -9,7 +9,7 @@ function ProjectsHeader() {
     <div className="mb-12 flex items-center justify-between gap-x-10">
       <h2 className="text-lg font-bold text-secondary-700">پروژه های شما</h2>
       <button
-        className="btn btn--primary flex items-center gap-x-1 px-4 py-3 text-sm font-semibold"
+        className="btn btn--primary flex items-center gap-x-1 px-4 py-3 text-xs font-semibold lg:text-sm"
         onClick={() => setIsModalOpen(true)}
       >
         <TiPlus />
