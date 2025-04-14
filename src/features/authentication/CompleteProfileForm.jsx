@@ -23,11 +23,11 @@ function CompleteProfileForm() {
     try {
       const { message, user } = await mutateAsync(data);
       toast.success(message);
-      if (user.status !== 2) {
-        toast("پروفایل شما در انتظار برسی است");
-        navigate("/");
-        return;
-      }
+      // if (user.status !== 2) {
+      //   toast("پروفایل شما در انتظار برسی است");
+      //   navigate("/");
+      //   return;
+      // }
       if (user.role === "OWNER") return navigate("/owner");
       if (user.role === "FREELANCER") return navigate("/freelancer");
     } catch (error) {
